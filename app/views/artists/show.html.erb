@@ -59,19 +59,12 @@
                             
                             <h6 class="text-negrito-black">Adicionar novo Album em <%=@artist.name%> </h6>
                             
-                            <p class="card-text white-text">
-
-                         
-                               <%= link_to 'Criar Album', new_album_path, class: 'btn btn-dark my-3'%>
-                          
-                         
-                            </p>
+                            <p class="card-text white-text">                                        
+                                <%= link_to 'Criar Album', new_album_path(artist_id: @artist.id), class: 'btn btn-dark my-3'%>                        
+                            </p>                                    
                             </a>
                         </div>
-
-                    </div>
-                    <!--/.Card-->
-            
+                    </div>           
                 </div>
              
      
